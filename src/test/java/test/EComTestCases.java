@@ -26,6 +26,9 @@ public class EComTestCases {
     // tools
     private static WebDriver driver;
 
+    // pages
+    protected static Home homeObj;
+
     @Test
     public void setupTest() {
 
@@ -55,8 +58,16 @@ public class EComTestCases {
         driver.get(appURL);
         driver.manage().deleteAllCookies();
 
+        homeObj = new Home();
+        homeObj.setWebDriver(driver);
 
     } // end setupTest
+
+    @Test(priority = 1)
+    public void testHome(){
+        homeObj.viewHome();
+
+    } // end method testHome()
 
 
 } // end EComTestCases
