@@ -13,6 +13,7 @@ public class NetflixFilterByActorStep {
 
     Login login;
     Movie movie;
+    MoviesOnNetflix moviesOnNetflix = new MoviesOnNetflix();
 
     @Given("I have signed in to Netflix")
     public void i_have_signed_in_to_netflix() {
@@ -38,6 +39,7 @@ public class NetflixFilterByActorStep {
             System.out.println("Actor: " + list.get(1));
 
             movie = new Movie(list.get(0), list.get(1));
+            moviesOnNetflix.setMovieList(movie);
         }
 
     }

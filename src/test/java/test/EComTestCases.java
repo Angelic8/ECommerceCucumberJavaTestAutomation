@@ -9,6 +9,7 @@ package test;
  * ****************************************
  */
 
+import io.cucumber.datatable.DataTable;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -29,7 +30,7 @@ public class EComTestCases {
     // pages
     protected static Home homeObj;
 
-    @Test
+    @BeforeTest
     public void setupTest() {
 
         // Push Notifications
@@ -66,7 +67,8 @@ public class EComTestCases {
     @Test(priority = 1)
     public void testHome(){
         homeObj.viewHome();
-
+        homeObj.i_have_signed_in_to_amazon();
+        //homeObj.i_have_the_following_computer_accessories_and_peripherals_on_amazon(DataTable.emptyDataTable());
     } // end method testHome()
 
 
