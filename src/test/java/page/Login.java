@@ -1,30 +1,30 @@
 package page;
 
 public class Login {
-
-    private String username;
+    private String userName;
     private String password;
 
-    public Login(String username, String password) {
-        this.username = username;
+    public Login(String userName, String password){
+        this.userName = userName;
         this.password = password;
-    } // end constructor Login
+    } // end constructor
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setUserName(String userName){
+        this.userName = userName;
     }
 
-    public void setPassword(String password) {
+    public void setPassword(String password){
         this.password = password;
     }
 
-    public String getUsername() {
-        return username;
+    public String getUserName(){
+        return userName;
     }
 
-    public String getPassword() {
+    public String getPassword(){
         return password;
     }
+
 
 
 } // end Login

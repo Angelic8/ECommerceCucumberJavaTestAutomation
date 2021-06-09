@@ -13,9 +13,9 @@ Feature: Filter by Computer Accessories & Peripherals
   And I have the following Computer Accessories and Peripherals on Amazon
     | Logitech USB Headset H390 with Noise Cancelling Mic                                                    | Logitech |
     | Logitech USB Headset H390 with Noise Cancelling Mic Pack of 2                                          | Logitech |
-    | Logitech H390 USB Headset with Noise-Cancelling Computer Accessories & Peripheralslling Mic - 16 Pack        | Logitech |
-  When I searched for by "<Brand">
-  Then I find Number of "<Computer Accessories and Peripherals>"
+    | Logitech H390 USB Headset with Noise-Cancelling Computer Accessories & Peripheralslling Mic - 16 Pack  | Logitech |
+  When I searched for by "<Brand>"
+  Then I find Number of "<Title>"
 
     Examples:
       | Brand      | Title |
