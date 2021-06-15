@@ -13,8 +13,8 @@ public class TitlesList {
 
     @Test
     public void testTitlesList(){
-        testList.add("movie1");
-        testList.add("movie2");
+        testList.add("Title1");
+        testList.add("Title2");
 
         System.out.println("Test all titles Lists " + testList);
 
@@ -22,6 +22,19 @@ public class TitlesList {
         for (String list: testList) {
             System.out.println("Individual list: " + list);
         }
-        
+
+        System.out.println(testList.size());
     } // end testTitlesList()
+
+    @Test
+    public void testTitles2(){
+        List<Title> titleList = new ArrayList<Title>();
+        Title title = new Title("Title1","Title2");
+
+        titleList.add(title);
+
+        System.out.println("list of titles: " + title.getTitle() + " and " + title.getBrand());
+
+    } // end testTitles()
+
 } // end TitlesList
